@@ -7,11 +7,18 @@ export const userSchema: Schema = new Schema({
       type: String
     },
     email: {
-      type: String
+      type: String,
+      required: true 
+
     },
     password: {
-      type: Number
+      type: String,
+      required: true 
     },
+    // token: {
+    //   type: String,
+    //    required: true 
+    // }
   
   }, { versionKey: false, timestamps: true });
 
